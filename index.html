@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanguard Qiskit Fall Fest 2025</title>
+  <meta name="description" content="Register for our Qiskit Fall Fest. Join workshops, talks, and a hands‑on quantum hackathon." />
+  <meta property="og:title" content="Qiskit Fall Fest — Registration" />
+  <meta property="og:description" content="Join workshops, talks, and a hands‑on quantum hackathon. Register now!" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#A20A35" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+    /* === Vanguard-inspired theme tokens === */
+    :root{
+      --brand:#A20A35;          /* Vanguard Burgundy (approx) */
+      --brand-dark:#7D082A;     /* Darker burgundy */
+      --brand-light:#C4153F;    /* Lighter accent */
+      --ink:#111827;            /* Neutral 900 */
+      --ink-700:#374151;        /* Neutral 700 */
+      --ink-500:#6B7280;        /* Neutral 500 */
+      --surface:#ffffff;        /* Cards/background */
+      --surface-alt:#fafafa;    /* Section bg */
+      --border:#e5e7eb;         /* Neutral 200 */
+    }
+
+    .text-brand{ color: var(--brand); }
+    .bg-brand{ background-color: var(--brand); }
+    .bg-brand-dark{ background-color: var(--brand-dark); }
+    .btn-brand{ background-color: var(--brand); color:#fff; }
+    .btn-brand:hover{ background-color: var(--brand-dark); }
+    .chip{ background: #fff1f3; color: var(--brand); border: 1px solid #ffe4e8; }
+
+    .hero { background: var(--surface-alt); border-bottom:1px solid var(--border); }
+    .card { background: var(--surface); border:1px solid var(--border); border-radius: 1rem; }
+    .link-underline { text-decoration: underline; text-underline-offset: 4px; }
+  </style>
+</head>
+<body class="text-slate-800 bg-white">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-brand"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Z"/><path d="M12 6a1 1 0 0 0-1 1v4.382l-2.553 2.553a1 1 0 1 0 1.414 1.414l2.846-2.846A2 2 0 0 0 13 11V7a1 1 0 0 0-1-1Z"/></svg>
+        <span>Vanguard Qiskit Fall Fest 2025</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-brand">About</a>
+        <a href="#agenda" class="hover:text-brand">Agenda</a>
+        <a href="#speakers" class="hover:text-brand">Speakers</a>
+        <a href="#venue" class="hover:text-brand">Venue</a>
+        <a href="#faq" class="hover:text-brand">FAQ</a>
+        <a href="#register" class="inline-flex items-center gap-2 btn-brand px-4 py-2 rounded-xl transition font-semibold">
+          <span>Register</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="max-w-6xl mx-auto px-4 py-16 sm:py-20 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="chip inline-block px-3 py-1 rounded-full text-xs font-semibold">Hybrid Event</span>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4">Vanguard Qiskit Fall Fest <span class="text-brand">2025</span></h1>
+          <p class="mt-4 text-lg text-slate-600">A day of quantum computing talks, workshops, and a hands‑on mini‑hackathon. Open to students, researchers, and industry practitioners.</p>
+          <ul class="mt-6 text-slate-700 space-y-1">
+            <li><strong>Date:</strong> <span id="dateText">November 8, 2025</span></li>
+            <li><strong>Time:</strong> 10:00 AM – 5:30 PM (ET)</li>
+            <li><strong>Location:</strong> <a href="#venue" class="text-brand link-underline">Main Auditorium, Your Campus</a></li>
+          </ul>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#register" class="inline-flex items-center gap-2 btn-brand px-6 py-3 rounded-2xl transition font-semibold">
+              <span>Register now</span>
+            </a>
+            <span class="text-sm text-slate-500">Limited seats • Free to attend</span>
+          </div>
+          <div class="mt-5 text-sm text-slate-500" id="countdown">Counting down…</div>
+        </div>
+        <div class="relative">
+          <div class="card p-2 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop" alt="Quantum computing visual" class="rounded-2xl" />
+          </div>
+          <p class="sr-only">Illustration of quantum circuits</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold">About the Fest</h2>
+          <p class="mt-3 text-slate-700">Qiskit Fall Fest is a globally coordinated series of events celebrating the open-source Qiskit ecosystem. Our local chapter brings together quantum-curious newcomers and experienced practitioners to learn, build, and connect. Expect hands‑on labs, lightning talks, and opportunities to collaborate on mini‑projects.</p>
+        </div>
+        <div class="md:col-span-1">
+          <div class="card p-6 shadow-sm">
+            <h3 class="font-semibold">At a glance</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li>✔ Beginner‑friendly workshops</li>
+              <li>✔ Live coding with Qiskit</li>
+              <li>✔ Networking & swag</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agenda" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Agenda</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold">Morning</h3>
+          <ul class="mt-3 space-y-3 text-slate-700">
+            <li><span class="font-medium">10:00</span> — Registration & coffee</li>
+            <li><span class="font-medium">10:30</span> — Keynote: The Qiskit Ecosystem</li>
+            <li><span class="font-medium">11:15</span> — Workshop: Quantum Circuits 101</li>
+          </ul>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold">Afternoon</h3>
+          <ul class="mt-3 space-y-3 text-slate-700">
+            <li><span class="font-medium">13:00</span> — Hands‑on labs & mini‑hackathon</li>
+            <li><span class="font-medium">16:30</span> — Demos & closing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Speakers</h2>
+      <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <article class="card p-6 shadow-sm">
+          <div class="flex items-center gap-4">
+            <img class="w-14 h-14 rounded-xl object-cover" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop" alt="Speaker headshot">
+            <div>
+              <h3 class="font-semibold">Your Speaker</h3>
+              <p class="text-sm text-slate-500">Role • Affiliation</p>
+            </div>
+          </div>
+          <p class="mt-3 text-sm text-slate-700">Short bio or talk title goes here.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue -->
+  <section id="venue" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Venue</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="card p-6 shadow-sm">
+          <p class="text-slate-700"><strong>Main Auditorium</strong><br> Building / Street, City, State ZIP</p>
+          <p class="mt-2 text-slate-500 text-sm">Parking & transit info here.</p>
+          <div class="mt-3">
+            <a class="inline-flex items-center gap-2 text-brand link-underline" href="https://maps.google.com" target="_blank" rel="noreferrer">Open in Google Maps</a>
+          </div>
+        </div>
+        <iframe class="w-full h-72 md:h-full rounded-2xl border border-slate-200" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.1%2C40.6%2C-73.7%2C40.9&amp;layer=mapnik" loading="lazy" title="Map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section id="register" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Register</h2>
+      <p class="mt-2 text-slate-700">Please complete the form below to reserve your spot. You’ll receive a confirmation email with event details.</p>
+      <div class="mt-6 rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <iframe id="regForm" src="FORM_EMBED_URL" class="w-full h-[1000px]" loading="lazy" title="Qiskit Fall Fest Registration"></iframe>
+      </div>
+      <div class="mt-4">
+        <a href="FORM_RESPONSE_URL" target="_blank" rel="noreferrer" class="text-brand link-underline">Open the registration form in a new tab</a>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">By registering, you agree to our <a href="#privacy" class="link-underline text-brand">privacy notice</a>.</p>
+    </div>
+  </section>
+
+  <!-- FAQ / Privacy -->
+  <section id="faq" class="py-16 sm:py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-2xl font-bold">FAQ</h2>
+          <details class="mt-4 card p-5 shadow-sm">
+            <summary class="font-semibold cursor-pointer">Who can attend?</summary>
+            <p class="mt-2 text-slate-700">Open to students, faculty, and industry guests. Beginners welcome!</p>
+          </details>
+          <details class="mt-3 card p-5 shadow-sm">
+            <summary class="font-semibold cursor-pointer">Do I need prior quantum experience?</summary>
+            <p class="mt-2 text-slate-700">No. We’ll start with fundamentals and provide resources.</p>
+          </details>
+          <details class="mt-3 card p-5 shadow-sm">
+            <summary class="font-semibold cursor-pointer">Will sessions be recorded?</summary>
+            <p class="mt-2 text-slate-700">We plan to record the keynote and select workshops. Links will be shared with attendees.</p>
+          </details>
+        </div>
+        <div id="privacy">
+          <h2 class="text-2xl font-bold">Privacy notice</h2>
+          <p class="mt-2 text-slate-700">We collect your name, email, affiliation, and interests to manage event logistics. Your data will be used only for Qiskit Fall Fest communications and will not be sold. You can request deletion at any time by contacting the organizers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-slate-600 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <p>© <span id="year"></span> Qiskit Fall Fest — Local Chapter</p>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-brand" href="https://qiskit.org/" target="_blank" rel="noreferrer">Qiskit</a>
+        <a class="hover:text-brand" href="#register">Register</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // === Configuration ===
+    // Set your event date/time here (local time). Example: '2025-11-08T10:00:00-05:00'
+    const EVENT_START_ISO = '2025-11-08T10:00:00-05:00';
+    // Update the visible date text if desired
+    document.getElementById('dateText').textContent = 'November 8, 2025';
+
+    // === Countdown ===
+    const countdownEl = document.getElementById('countdown');
+    function tick() {
+      const now = new Date();
+      const start = new Date(EVENT_START_ISO);
+      const diff = start - now;
+      if (diff <= 0) {
+        countdownEl.textContent = 'We\'re live!';
+        clearInterval(timer);
+        return;
+      }
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      countdownEl.textContent = `Starts in ${d}d ${h}h ${m}m`;
+    }
+    const timer = setInterval(tick, 60000);
+    tick();
+
+    // === Year in footer ===
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
